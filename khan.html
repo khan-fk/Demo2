@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transparent Photo on Hover</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .imgae-size {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        border: solid 2px;
+        overflow: hidden;
+      }
+      .imgae-size img {
+        height: 250px;
+        border: solid 2px;
+        padding: 5px;
+        transition: opacity 0.1s ease;
+      }
+
+      .imgae-1:hover img {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imgae-size">
+      <img class="image-1" src="/Assets2/ii1.png" alt="Your Image" />
+      <img class="image-2" src="/Assets2/ii2 (2).png" alt="Your Image" />
+      <img class="image-3" src="/Assets2/ii3 (1).png" alt="Your Image" />
+      <img class="image-4" src="/Assets2/ii4 (1).png " alt="Your Image" />
+      <img class="image-5" src="/Assets2/ii5 (1).png " alt="Your Image" />
+      <img class="image-6" src="/Assets2/ii6 (1).png  " lt="Your Image" />
+      <img class="image-6" src="/Assets2/ii7 (1).png  " lt="Your Image" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1em;
+      }
+
+      .gallery a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .gallery img {
+        /* width: 100%;
+        height: auto; */
+        width: 200px;
+        height: 200px;
+        margin: 0.5em;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.1);
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Your Image Gallery</h1>
+    </header>
+
+    <div class="gallery">
+      <a href="/Assets/111111.5555.png" target="_blank">
+        <img src="/Assets/111111.5555.png" alt="Image 1" />
+      </a>
+      <a href="/Assets/44444444444444.png" target="_blank">
+        <img src="/Assets/44444444444444.png" alt="Image 2" />
+      </a>
+       Add more images as needed
+    </div>
+  </body>
+</html> 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Image Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1em;
+      }
+
+      .gallery a {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+      }
+
+      .gallery img {
+        /* width: 100%;
+        height: auto; */
+        width: 200px;
+        height: 200px;
+        /* margin: 0.5em; */
+        margin: 2px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+
+      .modal img {
+        max-width: 70%;
+        max-height: 70%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Your Image Gallery</h1>
+    </header>
+
+    <div class="gallery">
+      <a href="#" class="image-link" data-src="/Assets/Image1.png">
+        <img src="/Assets/Image1.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image2.png">
+        <img src="/Assets/Image2.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image3.png">
+        <img src="/Assets/Image3.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image4.png">
+        <img src="/Assets/Image4.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image5.png">
+        <img src="/Assets/Image5.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image6.png">
+        <img src="/Assets/Image6.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image7.png">
+        <img src="/Assets/Image7.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image8.png">
+        <img src="/Assets/Image8.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image9.png">
+        <img src="/Assets/Image9.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image10.png">
+        <img src="/Assets/Image10.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image11.png">
+        <img src="/Assets/Image11.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image12.png">
+        <img src="/Assets/Image12.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image13.png">
+        <img src="/Assets/Image13.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image14.png">
+        <img src="/Assets/Image14.png" alt="Image 1" />
+      </a>
+      <a href="#" class="image-link" data-src="/Assets/Image15.png">
+        <img src="/Assets/Image15.png" alt="Image 2" />
+      </a>
+      <!-- Add more images as needed -->
+    </div>
+
+    <div class="modal" id="myModal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Enlarged Image" />
+    </div>
+
+    <script>
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modalImage");
+
+      function openModal(src) {
+        modal.style.display = "flex";
+        modalImg.src = src;
+      }
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      var imageLinks = document.getElementsByClassName("image-link");
+
+      for (var i = 0; i < imageLinks.length; i++) {
+        imageLinks[i].addEventListener("click", function (event) {
+          event.preventDefault();
+          openModal(this.getAttribute("data-src"));
+        });
+      }
+    </script>
+  </body>
+</html>
